@@ -22,22 +22,30 @@
 // done!
 
 // TypeError
-try {
-  // intentional error - TypeError
-  null.myFunction();
-} catch (e) {
-  console.log(e.name); // TypeError
-  console.log(e.message); // Cannot read property 'myFunction' of null 
-  console.log(e instanceof TypeError); // true
-  console.log(e instanceof ReferenceError); // false
-}
+// try {
+//   // intentional error - TypeError
+//   null.myFunction();
+// } catch (e) {
+//   console.log(e.name); // TypeError
+//   console.log(e.message); // Cannot read property 'myFunction' of null 
+//   console.log(e instanceof TypeError); // true
+//   console.log(e instanceof ReferenceError); // false
+// }
 
 // SyntaxError
+// try {
+//   // intentional error - SyntaxError
+//   eval('/ a 1');
+// } catch (e) {
+//   console.log(e.name); // SyntaxError
+// }
+
+// URIError
 try {
-  // intentional error - SyntaxError
-  eval('/ a 1');
+  // intentional error - URIError
+  decodeURIComponent('%');
 } catch (e) {
-  console.log(e.name); // SyntaxError
+  console.log(e.name); // URIError
 }
 
 
