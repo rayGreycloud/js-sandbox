@@ -32,3 +32,13 @@ try {
   console.log(e instanceof ReferenceError); // false
 }
 
+// SyntaxError
+try {
+  // intentional error - SyntaxError
+  eval('/ a 1');
+} catch (e) {
+  console.log(e.name); // SyntaxError
+}
+
+
+
