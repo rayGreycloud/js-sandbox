@@ -1,6 +1,9 @@
+// Traversing the DOM
 let val;
 
+// Get named child of element
 const list = document.querySelector('ul.collection');
+// Get first-child of named child
 const listItem = document.querySelector('li.collection-item:first-child');
 
 val = listItem;
@@ -18,7 +21,6 @@ val = list.childNodes[3].nodeType;
 // 8 - Comment
 // 9 - Document itself
 // 10 - Doctype
-
 
 // Get children element nodes
 val = list.children;
